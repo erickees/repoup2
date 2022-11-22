@@ -171,7 +171,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
 
     #if username not in config.ACCES_USERS:
     if username not in tl_admin_users:
-        await bot.send_message(ev.chat.id,'😐ℕ𝕆 𝕋𝕀𝔼ℕ𝔼𝕊 𝔸𝕊ℂ𝔼𝕊𝕆 ℂ𝕆ℕ𝕋𝔸ℂ𝕋𝔸 𝔸 ℂ𝕆ℕ 𝕄𝕀 𝔻𝔼𝕊𝔸ℝℝ𝕆𝕃𝔸𝔻𝕆ℝ😐:erickees')
+        await bot.send_message(ev.chat.id,'😐ℕ𝕆 𝕋𝕀𝔼ℕ𝔼𝕊 𝔸𝕊ℂ𝔼𝕊𝕆 ℂ𝕆ℕ𝕋𝔸ℂ𝕋𝔸 𝔸 ℂ𝕆ℕ 𝕄𝕀 𝔻𝔼𝕊𝔸ℝℝ𝕆𝕃𝔸𝔻𝕆ℝ😐:@erickees')
         return
 
     if not os.path.isdir(config.ROOT_PATH + username):
@@ -213,7 +213,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
         pass
 
     if '/start' in text:
-        reply = '🤖𝐇𝐎𝐋𝐀 𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐈𝐃𝐎 𝐀 𝐄𝐒𝐓𝐄 𝐁𝐎𝐓 𝐌𝐈 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 𝐄𝐒 erickees🤖\𝐄𝐍𝐕𝐈𝐀𝐌𝐄 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐃𝐄 𝐂𝐔𝐀𝐋𝐐𝐔𝐈𝐄𝐑 𝐏𝐀𝐆𝐈𝐍𝐀 𝐘 𝐋𝐎 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐑𝐄,𝐋𝐔𝐄𝐆𝐎 𝐋𝐎 𝐒𝐔𝐁𝐈𝐑𝐄 𝐀 𝐋𝐀 𝐍𝐔𝐁𝐄☁️ 𝐘 𝐓𝐄 𝐌𝐀𝐍𝐃𝐀𝐑𝐄 𝐔𝐍 𝐓𝐗𝐓 𝐄𝐍𝐂𝐑𝐈𝐏𝐓𝐀𝐃𝐎 𝐀 𝐗𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑(descargas/subidas)\n\n'
+        reply = '🤖𝐇𝐎𝐋𝐀 𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐈𝐃𝐎 𝐀 𝐄𝐒𝐓𝐄 𝐁𝐎𝐓 𝐌𝐈 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 𝐄𝐒 @erickees🤖\𝐄𝐍𝐕𝐈𝐀𝐌𝐄 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐃𝐄 𝐂𝐔𝐀𝐋𝐐𝐔𝐈𝐄𝐑 𝐏𝐀𝐆𝐈𝐍𝐀 𝐘 𝐋𝐎 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐑𝐄,𝐋𝐔𝐄𝐆𝐎 𝐋𝐎 𝐒𝐔𝐁𝐈𝐑𝐄 𝐀 𝐋𝐀 𝐍𝐔𝐁𝐄☁️ 𝐘 𝐓𝐄 𝐌𝐀𝐍𝐃𝐀𝐑𝐄 𝐔𝐍 𝐓𝐗𝐓 𝐄𝐍𝐂𝐑𝐈𝐏𝐓𝐀𝐃𝐎 𝐀 𝐗𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑(descargas/subidas)\n\n'
         reply += '<a href="https://t.me/erickees">Soporte</a>'
         message = await bot.send_message(ev.chat.id,reply,parse_mode='html')
         pass
@@ -344,7 +344,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
             await bot.send_file(ev.chat,txtsendname,
                                 caption=f'{txtsendname}',
                                 thumb='thumb.png',
-                                buttons=[Button.url('Soporte','https://t.me/erickeesl')])
+                                buttons=[Button.url('Soporte','https://t.me/SoftSpaceX_S3')])
             for fitem in listdir:
                 try:
                     os.unlink(fitem)
